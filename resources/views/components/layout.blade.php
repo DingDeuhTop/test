@@ -33,7 +33,7 @@
 
     <!-- Document Title
     ============================================= -->
-    <title>Adelphos Car Rental</title>
+    <title>{{ setting('site.title') }}</title>
 </head>
 
 <body class="body-scroll">
@@ -43,7 +43,6 @@
         <!-- Header
         ============================================= -->
 
-        @yield('nav')
         <!-- #team end  -->
         {{ $slot }}
     </div>

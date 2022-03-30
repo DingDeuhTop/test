@@ -3,6 +3,7 @@
         <div class="col-xs-12 col-sm-12 col-md-7 col-content pl-100">
             <div class="heading heading-1 wow fadeInUp" data-wow-duration="1s">
                 <h2 class="heading--title">{{ $contact->title }} </h2>
+                <div class="heading--divider"></div>
                 <p class="heading--desc">Lorem ipsum dolor amet, consectetur adipisice elite sede eiusmod
                     tempor incidide labeore dolore magna.</p>
             </div>
@@ -37,7 +38,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-5 pr-0 pl-0 col-content">
+        <div class="col-xs-12 col-sm-12 col-md-5 pr-0 pl-0 col-content wow fadeInUp" data-wow-duration="1s"
+            style="text-align: center">
             {{-- <div class="col-img"> --}}
             {{-- <div class="bg-section"> --}}
             <img src="{{ "storage/{$contact->img}" }}" />

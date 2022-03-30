@@ -7,7 +7,7 @@ use Illuminate\Support\Str;
 use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Widgets\BaseDimmer;
 
-class truth extends BaseDimmer
+class album extends BaseDimmer
 {
     /**
      * The configuration array.
@@ -23,15 +23,15 @@ class truth extends BaseDimmer
     public function run()
     {
         // $count = Voyager::model('Post')->count();
-        $string = 'Trust';
+        $string = 'Album';
 
         return view('voyager::dimmer', array_merge($this->config, [
-            'icon'   => 'voyager-trophy',
+            'icon'   => 'voyager-folder',
             'title'  => "{$string}",
-            'text'   => 'Trust',
+            'text'   => 'Album',
             'button' => [
-                'text' => 'View Trust',
-                'link' => route('voyager.trusts.index'),
+                'text' => 'View Album',
+                'link' => route('voyager.albums.index'),
             ],
             'image' => voyager_asset('images/widget-backgrounds/02.jpg'),
         ]));

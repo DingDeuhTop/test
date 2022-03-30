@@ -152,6 +152,7 @@ return [
             'App\\Widget\\contact',
             'App\\Widget\\truth',
             'App\\Widget\\gallery',
+            'App\\Widget\\album',
         ],
 
     ],

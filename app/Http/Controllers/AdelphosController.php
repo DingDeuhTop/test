@@ -21,8 +21,7 @@ class AdelphosController extends Controller
         $contact = Contact::all();
         $trust = Trust::all();
         $home = Home::all();
-        $nav = Nav::all();
-        $album = Album::all();
+        $nav = Nav::orderBy('created_at', 'desc')->get();
         return view('home', [
             'abouts' => $about,
             'pics' => $pic,
@@ -30,12 +29,14 @@ class AdelphosController extends Controller
             'trusts' => $trust,
             'homes' => $home,
             'navs' => $nav,
-            'albums' => $album
         ]);
     }
 
     public function albumcat()
     {
-        return view('albumcat');
+        $album = Album::all();
+        return view('albumcat', [
+            'albums' => $album,
+        ]);
     }
 }

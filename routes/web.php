@@ -16,7 +16,10 @@ use TCG\Voyager\Facades\Voyager;
 */
 
 Route::get('/', [AdelphosController::class, 'home']);
-Route::get('/album', [AdelphosController::class, 'albumcat']);
+Route::get('album', [AdelphosController::class, 'albumcat']);
+// Route::get('/welcome', function () {
+//     return view('welcome');
+// });
 
 
 Route::group(['prefix' => 'admin'], function () {
