@@ -94,15 +94,9 @@
                 <!-- .col-md-6 end-->
                 <div class="col-xs-12 col-sm-12 col-md-7 col-content pl-100">
                     <div class="row clearfix">
-                        <div class="col-xs-12 col-sm-12 col-md-12">
-                            <div class="heading heading-1 wow fadeInUp" data-wow-duration="1s">
-                                <h2 class="heading--title">Why Us?</h2>
-                                <div class="heading--divider"></div>
-                                <p class="heading--desc">Lorem ipsum dolor amet, consectetur
-                                    adipisice elite sede
-                                    eiusmod tempor incidide labeore dolore magna.</p>
-                            </div>
-                        </div>
+                        @foreach ($letteralbums as $letteralbum)
+                            @include('partial.letteralbum')
+                        @endforeach
                         <!-- .col-md-6 end -->
                     </div>
                     <div class="row mb-50">
